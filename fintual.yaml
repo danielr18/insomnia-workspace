@@ -1,315 +1,35 @@
-type: collection.insomnia.rest/5.0
+type: spec.insomnia.rest/5.0
 schema_version: "5.1"
 name: Fintual
 meta:
-  id: wrk_7bd0e3c8ea37eb1a358efc8133221480
-  created: 1777559178632
-  modified: 1777559178632
-  description: Fintual API V1 - imported from https://fintual.cl/api-docs/v1/swagger.json
+  id: wrk_5e12c7b794074d7090f94d48bb7bad30
+  created: 1777562339894
+  modified: 1777562396891
+  description: ""
 collection:
-  - url: https://fintual.cl/api/goals/:id
-    name: Retrieves Goal
-    meta:
-      id: req_1a75295b62f64a24aaf089a79dbae35d
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178624
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-    pathParameters:
-      - name: id
-        value: ""
-  - url: https://fintual.cl/api/asset_providers/:asset_provider_id/conceptual_assets
-    name: Retrieves Provider's Conceptual Assets
-    meta:
-      id: req_1d1e4d3e5e81196206969c4a2ae90f2b
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178628
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-    pathParameters:
-      - name: asset_provider_id
-        value: ""
-  - url: https://fintual.cl/api/conceptual_assets/:conceptual_asset_id/real_assets
-    name: Retrieves Real Assets
-    meta:
-      id: req_2595a72ea343d5532629927bdc46f1a3
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178621
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-    pathParameters:
-      - name: conceptual_asset_id
-        value: ""
-  - url: https://fintual.cl/api/asset_providers/:id
-    name: Retrieves Real Asset
-    meta:
-      id: req_27b89040b152856757912a99d70d43bb
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178630
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-    pathParameters:
-      - name: id
-        value: ""
-  - url: https://fintual.cl/api/real_assets/:real_asset_id/days
-    name: Retrieves Real Asset Days
-    meta:
-      id: req_2c0bebbc4617a2d34d0c117d648d867a
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178623
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-    pathParameters:
-      - name: real_asset_id
-        value: ""
-  - url: https://fintual.cl/api/real_assets/:id
-    name: Retrieves Real Asset
-    meta:
-      id: req_44a6aa81bf6ce3c9ab18afaea5d69f4a
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178620
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-    pathParameters:
-      - name: id
-        value: ""
-  - url: https://fintual.cl/api/real_assets/:real_asset_id/expense_ratio
-    name: Retrieves Real Asset Expense Ratio
-    meta:
-      id: req_744c7b842735b62b9fcc213bb9d4ac39
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178622
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-    pathParameters:
-      - name: real_asset_id
-        value: ""
-  - url: https://fintual.cl/api/banks
-    name: Retrieves Banks
-    meta:
-      id: req_984f77e3c464702f9be33904b1a2f02c
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178629
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: https://fintual.cl/api/asset_providers
-    name: Retrieves Asset Providers
-    meta:
-      id: req_9d53ade4d0c2a79a5b266c61d4ebe72d
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178631
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: https://fintual.cl/api/conceptual_assets/:id
-    name: Retrieves Conceptual Asset
-    meta:
-      id: req_9e2f2cb402bac8e241d35d696fdb0ce8
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178626
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-    pathParameters:
-      - name: id
-        value: ""
-  - url: https://fintual.cl/api/conceptual_assets
-    name: Retrieves Conceptual Assets
-    meta:
-      id: req_d9847d51df50d49344405d0ed611618f
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178627
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-  - url: https://fintual.cl/api/spreads/:serie_id
-    name: Retrieves Spreads
-    meta:
-      id: req_eb350d215a253ec51b2eaf98e5840d8c
-      created: 1777559178632
-      modified: 1777559178632
-      isPrivate: false
-      description: ""
-      sortKey: -1777559178618
-    method: GET
-    headers:
-      - name: Accept
-        value: application/json
-    settings:
-      renderRequestBody: true
-      encodeUrl: true
-      followRedirects: global
-      cookies:
-        send: true
-        store: true
-      rebuildPath: true
-    pathParameters:
-      - name: serie_id
-        value: ""
-  - url: https://fintual.cl/api/access_tokens
+  - url: "{{ _.base_url }}/access_tokens"
     name: Retrieves User Auth Token
     meta:
-      id: req_f45a7f7101e6b1caf5aa24352225dfb8
-      created: 1777559178632
-      modified: 1777559178632
+      id: req_5bbfa6299d7d42febb3b58c6d08c9c0d
+      created: 1777562339896
+      modified: 1777562339896
       isPrivate: false
-      description: ""
-      sortKey: -1777559178632
+      description: Retrieves user auth token
+      sortKey: -1777562339896
     method: POST
     body:
       mimeType: application/json
       text: |-
         {
           "user": {
-            "email": "{% op 'op://Personal/fintual.cl/username', '' %}",
-            "password": "{% op 'op://Personal/fintual.cl/password', '' %}"
+            "email": "string",
+            "password": "string"
           }
         }
     headers:
-      - name: Accept
-        value: application/json
       - name: Content-Type
         value: application/json
+        disabled: false
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -318,19 +38,16 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: https://fintual.cl/api/reference_net_asset_values/:serie_id
-    name: Retrieves Reference Net Asset Values
+  - url: "{{ _.base_url }}/asset_providers"
+    name: Retrieves Asset Providers
     meta:
-      id: req_f8ee835c14ed1dbb7a666fb68bffbefb
-      created: 1777559178632
-      modified: 1777559178632
+      id: req_47fd41f4dd8e4cc3b2dc54165c87c00b
+      created: 1777562339897
+      modified: 1777562339897
       isPrivate: false
-      description: ""
-      sortKey: -1777559178619
+      description: Retrieves all the asset providers
+      sortKey: -1777562339897
     method: GET
-    headers:
-      - name: Accept
-        value: application/json
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -339,22 +56,234 @@ collection:
         send: true
         store: true
       rebuildPath: true
-    pathParameters:
-      - name: serie_id
-        value: ""
-  - url: https://fintual.cl/api/goals
+  - url: "{{ _.base_url }}/asset_providers/{{ _.id }}"
+    name: Retrieves Real Asset
+    meta:
+      id: req_0ea0e725653141ff97c700d12c458295
+      created: 1777562339898
+      modified: 1777562339898
+      isPrivate: false
+      description: Retrieves specific asset provider data
+      sortKey: -1777562339898
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/banks"
+    name: Retrieves Banks
+    meta:
+      id: req_64f963db90ad480d9d74111dea17cf46
+      created: 1777562339898
+      modified: 1777562339898
+      isPrivate: false
+      description: Retrieves filtered banks
+      sortKey: -1777562339898
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/asset_providers/{{ _.asset_provider_id
+      }}/conceptual_assets"
+    name: Retrieves Provider's Conceptual Assets
+    meta:
+      id: req_db3a2140945244bab1ed9c55b3fb4d44
+      created: 1777562339898
+      modified: 1777562339898
+      isPrivate: false
+      description: Retrieves conceptual assets for the given provider
+      sortKey: -1777562339898
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/conceptual_assets"
+    name: Retrieves Conceptual Assets
+    meta:
+      id: req_12b300e7871c4952a99d91fa6938dcbe
+      created: 1777562339899
+      modified: 1777562339899
+      isPrivate: false
+      description: Retrieves conceptual assets
+      sortKey: -1777562339899
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/goals/{{ _.id }}"
+    name: Retrieves Goal
+    meta:
+      id: req_4221785c36c648d6969026ab6aa10bf5
+      created: 1777562339899
+      modified: 1777562339899
+      isPrivate: false
+      description: Retrieves specific goal data
+      sortKey: -1777562339899
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/conceptual_assets/{{ _.id }}"
+    name: Retrieves Conceptual Asset
+    meta:
+      id: req_bb09c463bfe34fe38889619fb0735dcb
+      created: 1777562339899
+      modified: 1777562339899
+      isPrivate: false
+      description: Retrieves specific conceptual asset data
+      sortKey: -1777562339899
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/goals"
     name: Retrieves User Goals
     meta:
-      id: req_ff5b45ce83aebef6a09ed6963058b38b
-      created: 1777559178632
-      modified: 1777559178632
+      id: req_c0fbe9d656e44ccb8cd2482a45d72ad1
+      created: 1777562339899
+      modified: 1777562339899
       isPrivate: false
-      description: ""
-      sortKey: -1777559178625
+      description: Retrieves all the user goals
+      sortKey: -1777562339899
     method: GET
-    headers:
-      - name: Accept
-        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/real_assets/{{ _.real_asset_id }}/days"
+    name: Retrieves Real Asset Days
+    meta:
+      id: req_ca59e9308a2f47328b6bb58ab75de763
+      created: 1777562339899
+      modified: 1777562339899
+      isPrivate: false
+      description: Retrieves real asset days
+      sortKey: -1777562339899
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/real_assets/{{ _.id }}"
+    name: Retrieves Real Asset
+    meta:
+      id: req_279a520bb93849709555f82e2122a11b
+      created: 1777562339900
+      modified: 1777562339900
+      isPrivate: false
+      description: Retrieves specific real asset data
+      sortKey: -1777562339900
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/real_assets/{{ _.real_asset_id }}/expense_ratio"
+    name: Retrieves Real Asset Expense Ratio
+    meta:
+      id: req_a8bd709124c44a149cb7fa5a75170068
+      created: 1777562339900
+      modified: 1777562339900
+      isPrivate: false
+      description: Retrieves real asset expense ratio
+      sortKey: -1777562339900
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/reference_net_asset_values/{{ _.serie_id }}"
+    name: Retrieves Reference Net Asset Values
+    meta:
+      id: req_da9e307e1124433692ad455f63d08773
+      created: 1777562339900
+      modified: 1777562339900
+      isPrivate: false
+      description: Retrieves reference net asset values
+      sortKey: -1777562339900
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/conceptual_assets/{{ _.conceptual_asset_id
+      }}/real_assets"
+    name: Retrieves Real Assets
+    meta:
+      id: req_ee3527322f6844bdbea830ca674439ef
+      created: 1777562339900
+      modified: 1777562339900
+      isPrivate: false
+      description: Retrieves all the real assets
+      sortKey: -1777562339900
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: "{{ _.base_url }}/spreads/{{ _.serie_id }}"
+    name: Retrieves Spreads
+    meta:
+      id: req_d482cb780c6246a1a4ca3ad81812f186
+      created: 1777562339901
+      modified: 1777562339901
+      isPrivate: false
+      description: Retrieves spreads
+      sortKey: -1777562339901
+    method: GET
     settings:
       renderRequestBody: true
       encodeUrl: true
@@ -366,19 +295,872 @@ collection:
 cookieJar:
   name: Default Jar
   meta:
-    id: jar_cda2b86b58d20b954de1fc9b30405389cdfa6713
-    created: 1777559365620
-    modified: 1777559365620
+    id: jar_f04bff803499d48776ac56e6680f543bf7bfb187
+    created: 1777562340003
+    modified: 1777562340003
 environments:
-  name: Base Environment
+  name: Base environment
   meta:
-    id: env_5105f0e959ce92f921a39d9ee5d66964
-    created: 1777559178632
-    modified: 1777559178632
+    id: env_bfbc9ab59ecd447eacf950c4045fd2fe
+    created: 1777562339896
+    modified: 1777562339896
     isPrivate: false
   data:
-    base_url: https://fintual.cl/api
-    __op_plugin:
-      cliPath: /usr/local/bin/op
-      defaultAccount: my.1password.com
-      cacheTTL: 3600
+    base_url: "{{ _.scheme }}://{{ _.host }}{{ _.base_path }}"
+  subEnvironments:
+    - name: Swagger env
+      meta:
+        id: env_634d853be780459cbe09253449f1f799
+        created: 1777562339896
+        modified: 1777562339896
+        isPrivate: false
+        sortKey: 1777562339896
+      data:
+        base_path: /api
+        scheme: http
+        host: ""
+spec:
+  contents:
+    swagger: "2.0"
+    info:
+      title: API V1
+      version: v1
+    basePath: /api
+    definitions:
+      access_token_params:
+        type: object
+        properties:
+          email:
+            type: string
+          password:
+            type: string
+      asset_provider:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "3"
+          type:
+            type: string
+            example: asset_provider
+          attributes:
+            type: object
+            properties:
+              name:
+                type: string
+                example: BANCHILE ADMINISTRADORA GENERAL DE FONDOS S.A.
+            required:
+              - name
+        required:
+          - id
+          - type
+          - attributes
+      bank:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "24"
+          type:
+            type: string
+            example: bank
+          attributes:
+            type: object
+            properties:
+              name:
+                type: string
+                example: Banco Chile
+            required:
+              - name
+        required:
+          - id
+          - type
+          - attributes
+      conceptual_asset:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "530"
+          type:
+            type: string
+            example: conceptual_asset
+          attributes:
+            type: object
+            properties:
+              name:
+                type: string
+                example: FONDO MUTUO ZURICH VALOR
+              symbol:
+                type: string
+                example: FFMM-ZURICH-9426
+              category:
+                type: string
+                example: mutual_fund
+              currency:
+                type: string
+                example: CLP
+              max_scale:
+                type: integer
+                example: 4
+              run:
+                type: string
+                example: 9426-9
+              data_source:
+                type: string
+                example: http://www.cmfchile.cl
+                nullable: true
+            required:
+              - name
+              - symbol
+              - category
+              - currency
+              - max_scale
+              - run
+              - data_source
+        required:
+          - id
+          - type
+          - attributes
+      goal:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "24"
+          type:
+            type: string
+            example: goal
+          attributes:
+            type: object
+            properties:
+              name:
+                type: string
+                example: Mi Casita
+              nav:
+                type: number
+                example: 666
+            required:
+              - name
+              - nav
+        required:
+          - id
+          - type
+          - attributes
+      optimal_portfolio:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "2885"
+          type:
+            type: string
+            example: portfolio
+          attributes:
+            risk:
+              type: integer
+              example: 5
+            nominal_return:
+              type: float
+              example: 0.139404112771225
+            curve_params:
+              type: object
+              properties:
+                worst_than_97_point_5:
+                  type: object
+                  properties:
+                    a:
+                      type: float
+                      example: -0.104879548174728
+                    b:
+                      type: float
+                      example: -0.0828703736516636
+                  required:
+                    - a
+                    - b
+                required:
+                  - worst_than_97_point_5
+            portfolio:
+              type: array
+              items:
+                type: object
+                properties:
+                  ticker:
+                    type: string
+                    example: FM-FIN-CGC
+                  weight:
+                    type: float
+                    example: 0.04
+                  tag:
+                    type: string
+                    example: bond
+                required:
+                  - ticker
+                  - weight
+                  - tag
+          relationships:
+            type: object
+            properties:
+              portfolio:
+                type: object
+                properties:
+                  data:
+                    type: array
+        required:
+          - id
+          - type
+          - attributes
+      optimal_portfolio_asset_params:
+        type: object
+        properties:
+          weight:
+            type: integer
+          conceptual_asset_id:
+            type: integer
+      optimal_portfolio_params:
+        type: object
+        properties:
+          timeframe:
+            type: integer
+          risk:
+            type: integer
+          nominal_return:
+            type: float
+          worst_than_97_point_5_curve_a:
+            type: float
+          worst_than_97_point_5_curve_b:
+            type: float
+      real_asset:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "9542"
+          type:
+            type: string
+            example: real_asset
+          attributes:
+            type: object
+            properties:
+              name:
+                type: string
+                example: FONDO MUTUO COMPROMISO BANCOESTADO
+              symbol:
+                type: string
+                example: FFMM-BANCOESTADO-8317-F
+              serie:
+                type: string
+                example: F
+              start_date:
+                type: string
+                nullable: true
+                example: 2018-03-02
+              end_date:
+                type: string
+                nullable: true
+              previous_asset_id:
+                type: string
+                nullable: true
+              last_day:
+                type: object
+                properties:
+                  fixed_management_fee:
+                    type: float
+                    example: 208846
+                  iva_exclusive_expenses:
+                    type: float
+                    example: 0
+                  iva_inclusive_expenses:
+                    type: float
+                    example: 0
+                  net_asset_value:
+                    type: float
+                    example: 1190.6437
+                  purchase_fee:
+                    type: float
+                    example: 0
+                  redemption_fee:
+                    type: float
+                    example: 0
+                  total_assets:
+                    type: float
+                    example: 353685643029
+                  total_net_assets:
+                    type: float
+                    example: 63669303947
+                  variable_management_fee:
+                    type: float
+                    example: 0
+                  fixed_fee:
+                    type: float
+                    example: 0.00000328636172276668
+                  new_shares:
+                    type: float
+                    example: 100785.8186
+                  outstanding_shares:
+                    type: float
+                    example: 53474691.5562
+                  redeemed_shares:
+                    type: float
+                    example: 0
+                  institutional_investors:
+                    type: float
+                    example: 0
+                  shareholder:
+                    type: float
+                    example: 4
+                  date:
+                    type: string
+                    example: 2021-01-28
+              conceptual_asset_id:
+                type: integer
+                example: 1755
+            required:
+              - name
+              - symbol
+              - last_day
+        required:
+          - id
+          - type
+          - attributes
+      real_asset_day:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "24"
+          type:
+            type: string
+            example: real_asset_day
+          attributes:
+            type: object
+            properties:
+              date:
+                type: string
+                example: 1984-06-04
+              price:
+                type: float
+                example: 12949224
+              fixed_fee:
+                type: float
+                example: 0.000054543884947175
+              variable_fee:
+                type: float
+                example: 0.0000326027397260274
+              net_asset_value:
+                type: float
+                example: 1
+              net_asset_value_type:
+                type: string
+                example: clp
+            required:
+              - date
+              - price
+        required:
+          - id
+          - type
+          - attributes
+      real_asset_expense_ratio:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "9542"
+          type:
+            type: string
+            example: real_asset_expense_ratio
+          attributes:
+            type: object
+            properties:
+              expense_ratio:
+                type: float
+                example: 0.001205367064356366
+            required:
+              - expense_ratio
+        required:
+          - id
+          - type
+          - attributes
+      reference_net_asset_value:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "24"
+          type:
+            type: string
+            example: reference_net_asset_value
+          attributes:
+            type: object
+            properties:
+              date:
+                type: string
+                example: 1984-06-04
+              price:
+                type: float
+                example: 12949224
+              serie:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: SOLVENTE
+                  conceptual_asset_id:
+                    type: integer
+                    example: 1
+            required:
+              - date
+              - price
+              - serie
+        required:
+          - id
+          - type
+          - attributes
+      spread:
+        type: object
+        properties:
+          id:
+            type: string
+            example: "24"
+          type:
+            type: string
+            example: spread
+          attributes:
+            type: object
+            properties:
+              date:
+                type: string
+                example: 1984-06-04
+              value:
+                type: float
+                example: 0.7
+              serie:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: SOLVENTE
+                  conceptual_asset_id:
+                    type: integer
+                    example: 1
+            required:
+              - date
+              - value
+              - serie
+        required:
+          - id
+          - type
+          - attributes
+    paths:
+      /access_tokens:
+        post:
+          summary: Retrieves User Auth Token
+          description: Retrieves user auth token
+          consumes:
+            - application/json
+          produces:
+            - application/json
+          parameters:
+            - name: user
+              in: body
+              schema:
+                type: object
+                properties:
+                  user:
+                    $ref: "#/definitions/access_token_params"
+                required:
+                  - user
+          responses:
+            "201":
+              description: Created
+            "400":
+              description: Invalid Parameters
+            "401":
+              description: Not Authorized
+            "403":
+              description: Forbidden Access
+            "422":
+              description: Missing Attribute
+      /asset_providers:
+        get:
+          summary: Retrieves Asset Providers
+          produces:
+            - application/json
+          description: Retrieves all the asset providers
+          responses:
+            "200":
+              description: with valid params
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/definitions/asset_provider"
+                required:
+                  - data
+      /asset_providers/{id}:
+        parameters:
+          - name: id
+            in: path
+            type: integer
+            required: true
+          - name: name
+            in: query
+            type: string
+            required: false
+        get:
+          summary: Retrieves Real Asset
+          produces:
+            - application/json
+          description: Retrieves specific asset provider data
+          responses:
+            "200":
+              description: with valid params
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: "#/definitions/asset_provider"
+            "404":
+              description: with invalid asset provider id
+      /banks:
+        parameters:
+          - name: q
+            in: query
+            type: string
+        get:
+          summary: Retrieves Banks
+          produces:
+            - application/json
+          description: Retrieves filtered banks
+          responses:
+            "200":
+              description: with valid params
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/definitions/bank"
+                required:
+                  - data
+      /asset_providers/{asset_provider_id}/conceptual_assets:
+        parameters:
+          - name: asset_provider_id
+            in: path
+            type: integer
+            required: true
+          - name: name
+            in: query
+            type: string
+            required: false
+          - name: run
+            in: query
+            type: integer
+            required: false
+        get:
+          summary: Retrieves Provider's Conceptual Assets
+          produces:
+            - application/json
+          description: Retrieves conceptual assets for the given provider
+          responses:
+            "200":
+              description: filtering by run
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/definitions/conceptual_asset"
+                required:
+                  - data
+            "404":
+              description: with invalid real asset id
+      /conceptual_assets:
+        parameters:
+          - name: name
+            in: query
+            type: string
+            required: false
+          - name: run
+            in: query
+            type: integer
+            required: false
+        get:
+          summary: Retrieves Conceptual Assets
+          produces:
+            - application/json
+          description: Retrieves conceptual assets
+          responses:
+            "200":
+              description: filtering by run
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/definitions/conceptual_asset"
+                required:
+                  - data
+      /conceptual_assets/{id}:
+        parameters:
+          - name: id
+            in: path
+            type: integer
+            required: true
+        get:
+          summary: Retrieves Conceptual Asset
+          produces:
+            - application/json
+          description: Retrieves specific conceptual asset data
+          responses:
+            "200":
+              description: with valid params
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: "#/definitions/conceptual_asset"
+            "404":
+              description: with invalid real asset id
+      /goals:
+        parameters:
+          - name: X-User-Email
+            in: header
+            type: string
+            required: true
+          - name: X-User-Token
+            in: header
+            type: string
+            required: true
+        get:
+          summary: Retrieves User Goals
+          produces:
+            - application/json
+          description: Retrieves all the user goals
+          responses:
+            "200":
+              description: with valid params
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/definitions/goal"
+                required:
+                  - data
+            "401":
+              description: with invalid user token
+      /goals/{id}:
+        parameters:
+          - name: id
+            in: path
+            type: integer
+            required: true
+          - name: X-User-Email
+            in: header
+            type: string
+            required: true
+          - name: X-User-Token
+            in: header
+            type: string
+            required: true
+        get:
+          summary: Retrieves Goal
+          produces:
+            - application/json
+          description: Retrieves specific goal data
+          responses:
+            "200":
+              description: with valid params
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: "#/definitions/goal"
+                required:
+                  - data
+            "401":
+              description: with invalid user token
+            "404":
+              description: with invalid goal id
+      /real_assets/{real_asset_id}/days:
+        parameters:
+          - name: real_asset_id
+            in: path
+            type: integer
+            required: true
+          - name: date
+            in: query
+            type: string
+            required: false
+          - name: from_date
+            in: query
+            type: string
+            required: false
+          - name: to_date
+            in: query
+            type: string
+            required: false
+        get:
+          summary: Retrieves Real Asset Days
+          produces:
+            - application/json
+          description: Retrieves real asset days
+          responses:
+            "200":
+              description: filtering by date
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/definitions/real_asset_day"
+                required:
+                  - data
+            "404":
+              description: with invalid real asset id
+      /real_assets/{real_asset_id}/expense_ratio:
+        parameters:
+          - name: real_asset_id
+            in: path
+            type: integer
+            required: true
+        get:
+          summary: Retrieves Real Asset Expense Ratio
+          produces:
+            - application/json
+          description: Retrieves real asset expense ratio
+          responses:
+            "200":
+              description: with valid params
+            "404":
+              description: with invalid real asset id
+      /conceptual_assets/{conceptual_asset_id}/real_assets:
+        parameters:
+          - name: conceptual_asset_id
+            in: path
+            type: integer
+            required: true
+        get:
+          summary: Retrieves Real Assets
+          produces:
+            - application/json
+          description: Retrieves all the real assets
+          responses:
+            "200":
+              description: with valid params
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/definitions/real_asset"
+                required:
+                  - data
+      /real_assets/{id}:
+        parameters:
+          - name: id
+            in: path
+            type: integer
+            required: true
+        get:
+          summary: Retrieves Real Asset
+          produces:
+            - application/json
+          description: Retrieves specific real asset data
+          responses:
+            "200":
+              description: with valid params
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: "#/definitions/real_asset"
+            "404":
+              description: with invalid real asset id
+      /reference_net_asset_values/{serie_id}:
+        parameters:
+          - name: serie_id
+            in: path
+            type: integer
+            required: true
+          - name: date
+            in: query
+            type: string
+            required: false
+          - name: from_date
+            in: query
+            type: string
+            required: false
+          - name: to_date
+            in: query
+            type: string
+            required: false
+        get:
+          summary: Retrieves Reference Net Asset Values
+          produces:
+            - application/json
+          description: Retrieves reference net asset values
+          responses:
+            "200":
+              description: filtering by date
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/definitions/reference_net_asset_value"
+                required:
+                  - data
+            "404":
+              description: with invalid serie id
+      /spreads/{serie_id}:
+        parameters:
+          - name: serie_id
+            in: path
+            type: integer
+            required: true
+          - name: date
+            in: query
+            type: string
+            required: false
+          - name: from_date
+            in: query
+            type: string
+            required: false
+          - name: to_date
+            in: query
+            type: string
+            required: false
+        get:
+          summary: Retrieves Spreads
+          produces:
+            - application/json
+          description: Retrieves spreads
+          responses:
+            "200":
+              description: filtering by date
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: "#/definitions/spread"
+                required:
+                  - data
+            "404":
+              description: with invalid serie id
+  meta:
+    id: spc_6bebb4bf423647e6878babce3990cd72
+    created: 1777562339895
+    modified: 1777562396889
