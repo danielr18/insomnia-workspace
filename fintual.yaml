@@ -307,6 +307,10 @@ environments:
     isPrivate: false
   data:
     base_url: "{{ _.scheme }}://{{ _.host }}{{ _.base_path }}"
+    __op_plugin:
+      cliPath: /usr/local/bin/op
+      defaultAccount: my.1password.com
+      cacheTTL: 3600
   subEnvironments:
     - name: Swagger env
       meta:
