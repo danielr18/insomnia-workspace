@@ -1,0 +1,76 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: IBKR
+meta:
+  id: wrk_d1e8e497a5c8405ebb663a53bb7cb8d7
+  created: 1777558243279
+  modified: 1777558276415
+  description: ""
+collection:
+  - url: https://www.interactivebrokers.com/Universal/servlet/FlexStatementService.SendRequest
+    name: https://www.interactivebrokers.com/Universal/servlet/FlexStatementService.SendRequest
+    meta:
+      id: req_50c4453c5ceb4d2da6d0a355b0b667b2
+      created: 1777558243280
+      modified: 1777558737009
+      isPrivate: false
+      description: ""
+      sortKey: -1777558243280
+    method: GET
+    parameters:
+      - name: t
+        value: "{% op 'op://Athenate Agent/IBKR FlexQuery/token', '' %}"
+        disabled: false
+      - name: q
+        value: "{% op 'op://Athenate Agent/IBKR FlexQuery/queryid', '' %}"
+        disabled: false
+      - name: v
+        value: "3"
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_e7717809e97e7ce5c8ec2618d132f8160b79730d
+    created: 1777558243338
+    modified: 1777558743460
+  cookies:
+    - id: 2519b0e2-2d51-4ea8-b949-c673a668aaf0
+      key: iab
+      value: "1"
+      domain: www.interactivebrokers.com
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: false
+    - id: 43693813-485d-4251-aa48-e2ded1cbcc09
+      key: x-sess-uuid
+      value: 0.a1dd517.1777558743.1278b99
+      domain: www.interactivebrokers.com
+      path: /Universal/servlet
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      pathIsDefault: true
+    - id: 46915cc7-bb38-4cb0-afc4-30e3061d14cd
+      key: JSESSIONID
+      value: 162287692B424090DB10D8E9983EDB25.ny5www5
+      domain: www.interactivebrokers.com
+      path: /Universal
+      secure: true
+      httpOnly: true
+      hostOnly: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_e7717809e97e7ce5c8ec2618d132f8160b79730d
+    created: 1777558243281
+    modified: 1777558243281
+    isPrivate: false
