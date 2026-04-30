@@ -19,7 +19,7 @@ collection:
   method: POST
   body:
     mimeType: application/json
-    text: "{\n  \"user\": {\n    \"email\": \"{% op 'op://Personal/Fintual/username', '' %}\",\n    \"password\": \"{% op 'op://Personal/Fintual/password', '' %}\"\n  }\n}"
+    text: "{\n  \"user\": {\n    \"email\": \"{% op 'op://Personal/fintual.cl/username', '' %}\",\n    \"password\": \"{% op 'op://Personal/fintual.cl/password', '' %}\"\n  }\n}"
   headers:
   - name: Accept
     value: application/json
@@ -366,3 +366,7 @@ environments:
     isPrivate: false
   data:
     base_url: https://fintual.cl/api
+    __op_plugin:
+      cliPath: /usr/local/bin/op
+      defaultAccount: my.1password.com
+      cacheTTL: 3600

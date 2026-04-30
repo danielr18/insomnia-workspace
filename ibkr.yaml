@@ -74,3 +74,8 @@ environments:
     created: 1777558243281
     modified: 1777558243281
     isPrivate: false
+  data:
+    __op_plugin:
+      cliPath: /usr/local/bin/op
+      defaultAccount: my.1password.com
+      cacheTTL: 3600
