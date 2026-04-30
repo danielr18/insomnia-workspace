@@ -1,0 +1,368 @@
+type: collection.insomnia.rest/5.0
+schema_version: '5.1'
+name: Fintual
+meta:
+  id: wrk_7bd0e3c8ea37eb1a358efc8133221480
+  created: 1777559178632
+  modified: 1777559178632
+  description: Fintual API V1 - imported from https://fintual.cl/api-docs/v1/swagger.json
+collection:
+- url: https://fintual.cl/api/access_tokens
+  name: Retrieves User Auth Token
+  meta:
+    id: req_f45a7f7101e6b1caf5aa24352225dfb8
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178632
+  method: POST
+  body:
+    mimeType: application/json
+    text: "{\n  \"user\": {\n    \"email\": \"{% op 'op://Personal/Fintual/username', '' %}\",\n    \"password\": \"{% op 'op://Personal/Fintual/password', '' %}\"\n  }\n}"
+  headers:
+  - name: Accept
+    value: application/json
+  - name: Content-Type
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/asset_providers
+  name: Retrieves Asset Providers
+  meta:
+    id: req_9d53ade4d0c2a79a5b266c61d4ebe72d
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178631
+  method: GET
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/asset_providers/:id
+  name: Retrieves Real Asset
+  meta:
+    id: req_27b89040b152856757912a99d70d43bb
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178630
+  method: GET
+  pathParameters:
+  - name: id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/banks
+  name: Retrieves Banks
+  meta:
+    id: req_984f77e3c464702f9be33904b1a2f02c
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178629
+  method: GET
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/asset_providers/:asset_provider_id/conceptual_assets
+  name: Retrieves Provider's Conceptual Assets
+  meta:
+    id: req_1d1e4d3e5e81196206969c4a2ae90f2b
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178628
+  method: GET
+  pathParameters:
+  - name: asset_provider_id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/conceptual_assets
+  name: Retrieves Conceptual Assets
+  meta:
+    id: req_d9847d51df50d49344405d0ed611618f
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178627
+  method: GET
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/conceptual_assets/:id
+  name: Retrieves Conceptual Asset
+  meta:
+    id: req_9e2f2cb402bac8e241d35d696fdb0ce8
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178626
+  method: GET
+  pathParameters:
+  - name: id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/goals
+  name: Retrieves User Goals
+  meta:
+    id: req_ff5b45ce83aebef6a09ed6963058b38b
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178625
+  method: GET
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/goals/:id
+  name: Retrieves Goal
+  meta:
+    id: req_1a75295b62f64a24aaf089a79dbae35d
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178624
+  method: GET
+  pathParameters:
+  - name: id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/real_assets/:real_asset_id/days
+  name: Retrieves Real Asset Days
+  meta:
+    id: req_2c0bebbc4617a2d34d0c117d648d867a
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178623
+  method: GET
+  pathParameters:
+  - name: real_asset_id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/real_assets/:real_asset_id/expense_ratio
+  name: Retrieves Real Asset Expense Ratio
+  meta:
+    id: req_744c7b842735b62b9fcc213bb9d4ac39
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178622
+  method: GET
+  pathParameters:
+  - name: real_asset_id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/conceptual_assets/:conceptual_asset_id/real_assets
+  name: Retrieves Real Assets
+  meta:
+    id: req_2595a72ea343d5532629927bdc46f1a3
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178621
+  method: GET
+  pathParameters:
+  - name: conceptual_asset_id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/real_assets/:id
+  name: Retrieves Real Asset
+  meta:
+    id: req_44a6aa81bf6ce3c9ab18afaea5d69f4a
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178620
+  method: GET
+  pathParameters:
+  - name: id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/reference_net_asset_values/:serie_id
+  name: Retrieves Reference Net Asset Values
+  meta:
+    id: req_f8ee835c14ed1dbb7a666fb68bffbefb
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178619
+  method: GET
+  pathParameters:
+  - name: serie_id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+- url: https://fintual.cl/api/spreads/:serie_id
+  name: Retrieves Spreads
+  meta:
+    id: req_eb350d215a253ec51b2eaf98e5840d8c
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+    description: ''
+    sortKey: -1777559178618
+  method: GET
+  pathParameters:
+  - name: serie_id
+    value: ''
+  headers:
+  - name: Accept
+    value: application/json
+  settings:
+    renderRequestBody: true
+    encodeUrl: true
+    followRedirects: global
+    cookies:
+      send: true
+      store: true
+    rebuildPath: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_5105f0e959ce92f921a39d9ee5d66964
+    created: 1777559178632
+    modified: 1777559178632
+    isPrivate: false
+  data:
+    base_url: https://fintual.cl/api
