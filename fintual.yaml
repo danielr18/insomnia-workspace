@@ -301,8 +301,8 @@ collection:
       text: |-
         {
           "user": {
-            "email": "{% op 'op://Personal/Fintual/username', '' %}",
-            "password": "{% op 'op://Personal/Fintual/password', '' %}"
+            "email": "{% op 'op://Personal/fintual.cl/username', '' %}",
+            "password": "{% op 'op://Personal/fintual.cl/password', '' %}"
           }
         }
     headers:
@@ -378,3 +378,7 @@ environments:
     isPrivate: false
   data:
     base_url: https://fintual.cl/api
+    __op_plugin:
+      cliPath: /usr/local/bin/op
+      defaultAccount: my.1password.com
+      cacheTTL: 3600
